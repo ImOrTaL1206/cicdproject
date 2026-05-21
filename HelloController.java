@@ -1,18 +1,9 @@
-package com.example.cicdproject;
+@GetMapping("/")
+public String home() {
+    return "CI/CD Project Running Successfully";
+}
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@RestController
-public class HelloController {
-
-    @GetMapping("/")
-    public String home() {
-        return "CI/CD Project Running Successfully";
-    }
-
-    @GetMapping("/health")
-    public String health() {
-        return "OK";
-    }
+@GetMapping("/health")
+public String health() {
+    return "OK";
 }
