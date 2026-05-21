@@ -8,6 +8,11 @@ public class HelloController {
 
     @GetMapping("/")
     public String home() {
-        return "CI/CD Pipeline Project Working Successfully";
+        return "CI/CD Project Running Successfully";
+    }
+
+    @GetMapping("/health")
+    public String health() {
+        return "OK";
     }
 }
