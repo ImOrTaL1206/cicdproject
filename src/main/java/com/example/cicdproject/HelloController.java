@@ -8,7 +8,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String home() {
-        return "CI/CD Project Running Successfully";
+        return "CI/CD Project executed Successfully";
     }
 
     @GetMapping("/health")
